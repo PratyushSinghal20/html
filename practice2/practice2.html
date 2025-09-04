@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Example</title>
+    <style>
+       
+       body{
+        margin:0;
+        padding:0;
+       }
+       
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            
+        }
+        #logo{
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+       
+
+        .logo {
+            color: yellow;
+            font-weight: bold;
+            margin-right: auto;
+        }
+
+        
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border: 3px solid black;
+            border-radius: 8px;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #imageLink{
+            height:350px;
+            width: 250px;
+        }
+
+        
+
+       
+    </style>
+</head>
+<body>
+
+    
+    <div class="navbar">
+        <div class="logo">Manav Rachna</div>
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <h2 style="text-align: center;"> MANAV RACHNA UNIVERSITY</h2>
+
+    
+    
+    <iframe name="myframe" width="500" height="350"></iframe>
+
+   
+    <div class="links">
+        <a href="image.html" target="myframe" id="imageLink">Show Image</a>
+
+        <a href="videoplayback.mp4" target="myframe">Play Video</a>
+        <a href="practice.html" target="myframe">Load Page 1</a>
+    </div>
+
+</body>
+</html>
